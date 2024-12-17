@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض النص</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .message {
+            font-size: 1.5em;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #444;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .small {
+            font-size: 1em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        Fatem Zahra La3roussi صغيرة على <br>
+        <strong>Mohammed Khennoussi</strong><br>
+        <span class="small">للأسف وتقنع نفسها بأنها كبيرة</span>
+    </div>
+
+    <script>
+        // إضافة تأثير تغيير لون النص بعد ثوانٍ
+        const message = document.querySelector('.message');
+        setTimeout(() => {
+            message.style.color = '#d9534f'; // تغيير اللون إلى الأحمر الداكن
+        }, 2000);
+    </script>
+</body>
+</html>
